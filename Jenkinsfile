@@ -6,6 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'mvn -B -DskipTests clean package'
+				archiveArtifacts('target/*.jar')
             }
         }
 		
