@@ -22,7 +22,11 @@ pipeline {
 		
 		  stage('Deliver') { 
             steps {
-                bat 'jenkins/scripts/deliver.bat' 
+				bat 'cd ..'
+				bat 'echo test'
+				bat 'cd jenkins'
+				bat 'cd scripts'
+                bat './jenkins/scripts/deliver.bat'' 
             }
         }
     }
