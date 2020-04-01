@@ -26,7 +26,7 @@ pipeline {
 				bat 'echo test'
 				bat 'cd jenkins'
 				bat 'cd scripts'
-                bat './jenkins/scripts/deliver.bat'' 
+                bat './jenkins/scripts/deliver.bat' 
             }
         }
     }
